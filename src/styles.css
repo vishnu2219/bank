@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background-image: url("./assets/pexels-pixabay-210574.jpg");
+    background-size: cover;
+    margin:0;
+
+}
+
+header{
+    color:white;
+    height:100px;
+    background-color:rgb(14, 97, 112);
+}
+footer{
+    color:white;
+    height:60px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color:rgb(14, 97, 112);
+    
+}
