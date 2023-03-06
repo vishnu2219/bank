@@ -26,33 +26,67 @@ export class LoginComponent {
    }
    //method
 
-   login(){
-    var acnum=this.accno
-    var password=this.pass
-    var userDetails=this.userDetails
-    // alert('login sucksexfully')
-    if(acnum in userDetails){
-      if(password==userDetails[acnum]["password"]){
-        alert("login success")
-      }
-      else{
-        alert("inccorect password")
-      }
+//    login(){
+//     var acnum=this.accno
+//     var password=this.pass
+//     var userDetails=this.userDetails
+//     // alert('login sucksexfully')
+//     if(acnum in userDetails){
+//       if(password==userDetails[acnum]["password"]){
+//         alert("login success")
+//       }
+//       else{
+//         alert("inccorect password")
+//       }
+//     }
+//     else{
+//       alert("incorrect account number")
+//     }
+//  }
+//  accnoChange(event:any){
+//   this.accno=event.target.value
+//   console.log(this.accno);
+  
+  
+// }
+
+// passChange(event:any){
+//   this.pass=event.target.value
+//   console.log(this.pass);
+  
+// }
+// }
+
+
+
+login(accno:any,pass:any){
+  var acnum=this.accno
+  var password=this.pass
+  var userDetails=this.userDetails
+  // alert('login sucksexfully')
+  if(acnum in userDetails){
+    if(password==userDetails[acnum]["password"]){
+      alert("login success")
     }
     else{
-      alert("incorrect account number")
+      alert("inccorect password")
     }
- }
- accnoChange(event:any){
-  this.accno=event.target.value
-  console.log(this.accno);
-  
-  
+  }
+  else{
+    alert("incorrect account number")
+  }
 }
+}
+// accnoChange(event:any){
+// this.accno=event.target.value
+// console.log(this.accno);
 
-passChange(event:any){
-  this.pass=event.target.value
-  console.log(this.pass);
-  
-}
-}
+
+// }
+
+// passChange(event:any){
+// this.pass=event.target.value
+// console.log(this.pass);
+
+// }
+// }

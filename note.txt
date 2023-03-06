@@ -65,3 +65,11 @@ html  -  view
 
     1.2.1 - event binding (event_name)="method()"
     1.2.2 - $event binding (event_name)="method($event)"
+    1.2.3 - event binding with template rendering variable #variablemname
+
+2.Two way binding
+------------------
+
+    2.1 ngmodel [(ngmodel)]="variable"
+        - FormsModule - module used to apply ngmodel
+
